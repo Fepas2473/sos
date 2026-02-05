@@ -4,23 +4,52 @@
 #include "driver/gpio.h"
 
 void app_main() {
-printf("Hello, Felipe!\n");
-gpio_set_direction(2,GPIO_MODE_OUTPUT);
- 
-  
-  gpio_set_level(2,1);
-    printf("Socorro!\n");
-    vTaskDelay(500 / portTICK_PERIOD_MS);
+  gpio_set_direction(2,GPIO_MODE_OUTPUT);
   gpio_set_level(2,0);
-    printf("Ajuda\n");
-    vTaskDelay(200 / portTICK_PERIOD_MS);
-  gpio_set_level(2,1);
-    vTaskDelay(500 / portTICK_PERIOD_MS);
-  gpio_set_level(2,0);
-    vTaskDelay(200 / portTICK_PERIOD_MS);
-  gpio_set_level(2,1);
-    vTaskDelay(500 / portTICK_PERIOD_MS);
-  gpio_set_level(2,0);
-    vTaskDelay(200 / portTICK_PERIOD_MS);
-  }
 
+  while (true) {
+    vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,0);
+  vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,1);
+  vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,0);
+  vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,1);
+  vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,0);
+  vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,1);
+  vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,0);
+    printf("S\n"); 
+  vTaskDelay(800 / portTICK_PERIOD_MS);
+gpio_set_level(2,1);
+  vTaskDelay(800 / portTICK_PERIOD_MS);
+gpio_set_level(2,0);
+  vTaskDelay(800 / portTICK_PERIOD_MS);
+gpio_set_level(2,1);
+  vTaskDelay(800 / portTICK_PERIOD_MS);
+gpio_set_level(2,0);
+  vTaskDelay(800 / portTICK_PERIOD_MS);
+gpio_set_level(2,1);
+  vTaskDelay(800 / portTICK_PERIOD_MS);
+gpio_set_level(2,0);
+    printf("O\n");
+  vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,1);
+  vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,0);
+  vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,1);
+  vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,0);
+  vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,1);
+  vTaskDelay(250 / portTICK_PERIOD_MS);
+gpio_set_level(2,0);
+    printf("S\n");
+  vTaskDelay(1000 / portTICK_PERIOD_MS);
+    printf(" \n"); 
+  }
+}
